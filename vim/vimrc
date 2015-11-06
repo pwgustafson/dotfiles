@@ -1,0 +1,19 @@
+" My vimrc
+
+let &t_Co=256
+syntax enable
+
+
+set cursorline
+set number
+set tabstop=2
+
+
+
+nmap 0 ^
+
+function! SayHello()
+	echo "hello"
+endfunction
+
+
