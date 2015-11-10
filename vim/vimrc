@@ -1,19 +1,49 @@
 " My vimrc
 
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-commentary'
+Plugin 'thoughtbot/vim-rspec'
+Plugin 'nanotech/jellybeans.vim'
+call vundle#end()
+
+filetype plugin indent on
+
 let &t_Co=256
 syntax enable
 
+colorscheme jellybeans
 
-set cursorline
-set number
+let mapleader = "\<Space>"
+
+set hidden
+set autoread
+set lazyredraw
+set backspace=indent,eol,start
+set history=1000
+set scrolloff=4
+set expandtab
 set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set secure
+set autowrite
+set number
 
-
-
+" Normal Mappings
+nmap <leader>vr :sp $MYVIMRC<cr>
+nmap <leader>so :source $MYVIMRC<cr>
 nmap 0 ^
 
-function! SayHello()
-	echo "hello"
-endfunction
+map <leader>vi :tabe $MYVIMRC<cr>
 
 
