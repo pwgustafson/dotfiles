@@ -1,0 +1,14 @@
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias themes="cd ~/working/wrstudios/cloudcma_themes/"
+alias cma="cd ~/working/wrstudios/cloudcma/"
+alias mlx="cd ~/working/wrstudios/cloud_mlx/"
+alias data_services="cd ~/working/wrstudios/data_services/"
+alias ds="cd ~/working/wrstudios/data-services/"
+alias streams="cd ~/working/wrstudios/cloud_streams"
+alias ios="cd ~/working/wrstudios/ios/cloudstreams_ios"
+
+alias ds-console="cd ~/working/wrstudios/data_services && bundle exec irb -r ./app.rb"
+alias cs-staging="ssh rails@staging.cloudstreams.net"
+alias es-tunnel="ssh -L 9201:localhost:9200 rails@elasticsearch1.cloudstreams.net"
