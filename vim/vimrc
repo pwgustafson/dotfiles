@@ -1,5 +1,7 @@
 " My vimrc
 
+set background=dark
+
 set nocompatible
 filetype off
 
@@ -15,6 +17,12 @@ Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-commentary'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'nanotech/jellybeans.vim'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+
 call vundle#end()
 
 filetype plugin indent on
@@ -46,11 +54,8 @@ nmap <leader>vr :sp $MYVIMRC<cr>
 nmap <leader>so :source $MYVIMRC<cr>
 nmap 0 ^
 
-noremap <Leader>c <C-w>c
-noremap ^[] :tabn<CR>
-noremap ^[[ :tabp<CR>
-
 map <leader>vi :tabe $MYVIMRC<cr>
+map <leader>tm :tabe ~/.tmux.conf<cr>
 
 let g:ctrlp_custom_ignore = {'dir': '\v[\/](.git)$'}
 let g:ctrlp_prompt_mappings = { 
@@ -60,4 +65,4 @@ let g:ctrlp_prompt_mappings = {
 
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files --others --cached --exclude-standard']
 
-
+noremap <Leader>c <C-w>c
