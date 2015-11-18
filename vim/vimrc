@@ -1,7 +1,5 @@
 " My vimrc
 
-set background=dark
-
 set nocompatible
 filetype off
 
