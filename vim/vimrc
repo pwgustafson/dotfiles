@@ -23,6 +23,8 @@ Plugin 'scrooloose/nerdTree'
 Plugin 'mileszs/ack.vim'
 Plugin 'christoomey/vim-tmux-runner'
 Plugin 'tpope/vim-dispatch'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'ervandew/supertab'
 call vundle#end()
 
 filetype plugin indent on
