@@ -25,6 +25,8 @@ Plugin 'christoomey/vim-tmux-runner'
 Plugin 'tpope/vim-dispatch'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'ervandew/supertab'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'wesQ3/vim-windowswap'
 call vundle#end()
 
 filetype plugin indent on
